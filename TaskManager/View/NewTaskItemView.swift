@@ -51,20 +51,20 @@ struct NewTaskItemView: View {
                 .font(.system(size: 24, weight: .bold, design: .rounded))
                 .padding()
                 .background(
-                  isDarkMode ? Color(UIColor.tertiarySystemBackground) : Color(UIColor.secondarySystemBackground)
+                  isDarkMode ? Color(.tertiarySystemBackground) : Color(.secondarySystemBackground)
                 )
                 .cornerRadius(10)
               
-              Button(action: {
+              Button {
                 addItem()
                 playSound(sound: "sound-ding", type: "mp3")
                 feedback.notificationOccurred(.success)
-              }, label: {
+              } label: {
                 Spacer()
                 Text("SAVE")
                   .font(.system(size: 24, weight: .bold, design: .rounded))
                 Spacer()
-              })
+              }
               .disabled(isButtonDisabled)
               .onTapGesture {
                 if isButtonDisabled {
@@ -75,16 +75,16 @@ struct NewTaskItemView: View {
               .foregroundColor(.white)
               .background(isButtonDisabled ? Color.blue : Color.pink)
               .cornerRadius(10)
-            } //: VSTACK
+            } //: VStack
             .padding(.horizontal)
             .padding(.vertical, 20)
             .background(
-              isDarkMode ? Color(UIColor.secondarySystemBackground) : Color.white
+              isDarkMode ? Color(.secondarySystemBackground) : .white
             )
             .cornerRadius(16)
             .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.65), radius: 24)
             .frame(maxWidth: 640)
-        }
+        } //: VStack
         .padding()
     }
 }
