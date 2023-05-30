@@ -16,6 +16,11 @@
 		8DE7C0C82A261111004853A1 /* sound-rise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DE7C0C52A261111004853A1 /* sound-rise.mp3 */; };
 		8DE7C0C92A261111004853A1 /* sound-tap.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DE7C0C62A261111004853A1 /* sound-tap.mp3 */; };
 		8DE7C0CA2A261111004853A1 /* sound-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8DE7C0C72A261111004853A1 /* sound-ding.mp3 */; };
+		8DE7C0D72A264076004853A1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7C0D62A264075004853A1 /* Constants.swift */; };
+		8DE7C0D92A2649E4004853A1 /* HideKeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7C0D82A2649E4004853A1 /* HideKeyboardExtension.swift */; };
+		8DE7C0DB2A264E43004853A1 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7C0DA2A264E43004853A1 /* BackgroundImageView.swift */; };
+		8DE7C0DD2A265F01004853A1 /* NewTaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7C0DC2A265F01004853A1 /* NewTaskItemView.swift */; };
+		8DE7C0DF2A265FBD004853A1 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7C0DE2A265FBD004853A1 /* SoundPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		8DE7C0C62A261111004853A1 /* sound-tap.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-tap.mp3"; sourceTree = "<group>"; };
 		8DE7C0C72A261111004853A1 /* sound-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-ding.mp3"; sourceTree = "<group>"; };
 		8DE7C0D12A26122E004853A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8DE7C0D62A264075004853A1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8DE7C0D82A2649E4004853A1 /* HideKeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardExtension.swift; sourceTree = "<group>"; };
+		8DE7C0DA2A264E43004853A1 /* BackgroundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageView.swift; sourceTree = "<group>"; };
+		8DE7C0DC2A265F01004853A1 /* NewTaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskItemView.swift; sourceTree = "<group>"; };
+		8DE7C0DE2A265FBD004853A1 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +116,8 @@
 		8DE7C0CC2A261123004853A1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8DE7C0DA2A264E43004853A1 /* BackgroundImageView.swift */,
+				8DE7C0DC2A265F01004853A1 /* NewTaskItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,6 +132,7 @@
 		8DE7C0CE2A261131004853A1 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8DE7C0D82A2649E4004853A1 /* HideKeyboardExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -127,6 +140,8 @@
 		8DE7C0CF2A261137004853A1 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				8DE7C0D62A264075004853A1 /* Constants.swift */,
+				8DE7C0DE2A265FBD004853A1 /* SoundPlayer.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -213,10 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE7C0D72A264076004853A1 /* Constants.swift in Sources */,
+				8DE7C0DB2A264E43004853A1 /* BackgroundImageView.swift in Sources */,
 				8DE7C0BB2A260F8C004853A1 /* Persistence.swift in Sources */,
+				8DE7C0D92A2649E4004853A1 /* HideKeyboardExtension.swift in Sources */,
+				8DE7C0DF2A265FBD004853A1 /* SoundPlayer.swift in Sources */,
 				8DE7C0B42A260F88004853A1 /* ContentView.swift in Sources */,
 				8DE7C0BE2A260F8C004853A1 /* TaskManager.xcdatamodeld in Sources */,
 				8DE7C0B22A260F87004853A1 /* TaskManagerApp.swift in Sources */,
+				8DE7C0DD2A265F01004853A1 /* NewTaskItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
